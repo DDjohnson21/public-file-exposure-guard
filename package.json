@@ -1,0 +1,32 @@
+{
+  "name": "public-file-exposure-guard",
+  "version": "0.1.0",
+  "description": "Lightweight external exposure monitor for detecting unintentionally public files, objects, and document URLs.",
+  "type": "module",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "keywords": [
+    "security",
+    "exposure-monitoring",
+    "url-scanner",
+    "storage",
+    "workflow-tool",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.3"
+  }
+}
